@@ -1,0 +1,72 @@
+
+@media (min-width: 768px) {
+    .sidepanel {
+      display: none;
+    }
+  
+    .openbtn {
+      display: none;
+    }
+  }
+  
+  /* Mobile Mode */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* para lalabas si hamburger menu */
+    }
+  
+    .sidepanel a {
+      font-size: 20px;
+    }
+  
+    .openbtn {
+      display: block; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    #profile {
+      flex-direction: row; /* para mag form ng row or straight line pag mobile device */
+      text-align: center;
+    }
+  
+    .section__pic-container {
+      margin-bottom: 0%; /* Space between image and text \ */
+    }
+  }
+
+  @media (max-width: 1024px) {
+    body {
+      font-size: 1.125rem; /* Slightly smaller text */
+      line-height: 1.5; /* Adjust line height for better readability */
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5rem; /* Adjust heading size */
+    }
+  }
+  
+  /* Media query for mobile devices (phones) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem; 
+      line-height: 1.4; 
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 2rem; 
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    p {
+      font-size: 1rem; /* Smaller text for paragraphs */
+    }
+  }
+  }

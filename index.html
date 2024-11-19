@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliya's Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+<div class="background-color"></div>
+  <!-- Side Panel Navigation (Mobile) -->
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#About">About Me</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Contacts">Contacts</a>
+  </div>
+
+  <!-- Hamburger Menu Button (Mobile) -->
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+  <!-- Navigation Bar (Desktop) -->
+  <nav class="navbar">
+    <a class="active" href="#Home">Home</a>
+    <a href="#About">About Me</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Contacts">Contacts</a>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./Assets/profilepic.png" alt="Profile Picture" />
+    </div>
+    <div class="section__text">
+        <p class="title1">Hello! I am</p>
+        <h1 class="title2">Aliya Beyonce Almaden</h1>
+      <p class="section__text__p2">A third-year BS Information System Student</p>
+    </div>
+    
+    <div class="btn-container">
+      <button
+        class="btn btn-color-1"
+        onclick="window.open('./Assets/resume.pdf')"> Download CV </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
