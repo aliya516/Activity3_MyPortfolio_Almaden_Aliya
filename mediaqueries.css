@@ -1,72 +1,139 @@
-
+/* Tablet and Larger Screens */
 @media (min-width: 768px) {
-    .sidepanel {
-      display: none;
-    }
-  
-    .openbtn {
-      display: none;
-    }
-  }
-  
-  /* Mobile Mode */
-  @media (max-width: 768px) {
-    .navbar {
-      display: none; /* para lalabas si hamburger menu */
-    }
-  
-    .sidepanel a {
-      font-size: 20px;
-    }
-  
-    .openbtn {
-      display: block; 
-    }
+  .sidepanel {
+    display: none;
   }
 
-  @media (max-width: 768px) {
-    #profile {
-      flex-direction: row; /* para mag form ng row or straight line pag mobile device */
-      text-align: center;
-    }
-  
-    .section__pic-container {
-      margin-bottom: 0%; /* Space between image and text \ */
-    }
+  .openbtn {
+    display: none;
+  }
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Hide the navbar for mobile */
+  .navbar {
+    display: none;
+  }
+  /* Adjust side panel links */
+  .sidepanel a {
+    font-size: 18px; /* Slightly smaller for better fit */
+    padding: 10px 15px;
+  }
+  /* Show the open button for mobile */
+  .openbtn {
+    display: block;
+  }
+  /* Hero Section: Centered and optimized for small screens */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: url('Assets/mobilebg.png') no-repeat center center / cover;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  /* Content section adjustments */
+  .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Softer opacity for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 0 auto;
+  }
+  /* Text styling */
+  .content p {
+    font-size: 30px; /* Reduced font size for better fit */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #987185;
+    margin-bottom: 10px;
+  }
+  .content h1 {
+    color: #423736;
+    font-size: 40px; /* Scaled down for mobile */
+    line-height: 1.3;
+    margin: 10px 0;
+  }
+  .content h2 {
+    color: #987185;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 5px 0 15px 0;
+    margin-bottom: 10%;
+  }
+  /* Button adjustments */
+  .btn-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+    align-items: center; /* Center-align buttons */
+    margin-top: 15px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: auto; /* Allow buttons to size dynamically */
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .btn-color-1,
+  .btn-color-2 {
+    width: 100%; /* Buttons take full width on mobile */
+    max-width: 300px; /* Limit width for larger devices */
+  }
+/*about me*/
+  .hero1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    max-height: 100vh;
+    background: url('Assets/aboutme2.png') no-repeat center center / cover;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  .content1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;  /* Apply Flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between;  /* Center vertically */
+    align-items:center /* Center horizontally */
+  }
+  .content1 h1 {
+    align-items: center;
+    color: #423736;
+    font-size: 20x;
+    line-height: 1.2;
+    margin-top: 5%;
+  }
+  /* Adjusting .content1 p */
+  .content1 p {
+    color: #987185;
+    margin-left: 22%;
+    text-align: center, justify;  /* Center the text */
+    padding: 10px 20px;
+    width: 50%;  /* Take full width of its parent */
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+/* Small Screens */
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.125rem;
+    line-height: 1.5;
   }
 
-  @media (max-width: 1024px) {
-    body {
-      font-size: 1.125rem; /* Slightly smaller text */
-      line-height: 1.5; /* Adjust line height for better readability */
-    }
-  
-    h1, h2, h3 {
-      font-size: 1.5rem; /* Adjust heading size */
-    }
+  h1, h2 {
+    font-size: 1.5rem;
   }
-  
-  /* Media query for mobile devices (phones) */
-  @media (max-width: 768px) {
-    body {
-      font-size: 1rem; 
-      line-height: 1.4; 
-      text-align: center;
-    }
-  
-    h1 {
-      font-size: 2rem; 
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    h3 {
-      font-size: 1.25rem;
-    }
-  
-    p {
-      font-size: 1rem; /* Smaller text for paragraphs */
-    }
+
+  p {
+    font-size: 1rem;
   }
-  }
+}

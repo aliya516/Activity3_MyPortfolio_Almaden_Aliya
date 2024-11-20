@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+  background-color: white;
+  height: 100vh; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-family: "Castoro", Serif;
+  color: black;
+}
+
+p, body,  h2, a{
+  font-family: "Public Sans", Sans-serif;
+  color: black;
+}
+/* Mobile Mode - Menu Side Panel */
+.sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e9d5b7;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.sidepanel a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 3%;
+  color: #423736;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: white;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  visibility: hidden;
+  color: white;
+  z-index: 4;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  background: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  display: block;
+}
+
+.openbtn:hover {
+  color: gray;
+}
+
+/* Desktop Mode - Nav Bar */
+.navbar {
+  display: flex;
+ justify-content: flex-start;
+  position: fixed;
+  margin-top: 1%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 0;
+  z-index: 6;
+}
+
+.navbar a {
+  margin-left: 1.5%;
+  color: #423736;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #987185;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #423736;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('Assets/sample16.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  background-blend-mode: lighten;
+  flex: 1;
+  max-width: 60vw;
+  max-height: 100vh;
+  padding: 50px;
+  z-index: 2;
+}
+
+.content p{
+font-size: 60px;
+text-transform: uppercase;
+font-weight: bold;
+align-self: first baseline;
+color: #987185; 
+margin-bottom: 10px;
+}
+
+.content h1 {
+  color: #423736;
+  font-size: 80px; 
+  line-height: 1.2; 
+  margin: 0;
+}
+
+.content h2 {
+  color: #987185; 
+  font-size: 48px;
+    line-height: 1.5; 
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background-color: aqua;
+}
+
+.btn-color-1,
+.btn-color-2, .btn-color-3 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover, .btn-color-3:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover, .btn-color-3:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-3 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-color-3:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+
+
+/*About Me*/
+.hero1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background-image: url('Assets/aboutmebg.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.content1 {
+  background-blend-mode: lighten;
+  flex: 1;
+  max-width: 60vw;
+  max-height: 100vh;
+  padding: 50px;
+  z-index: 2;
+}
+
+.content1 h1 {
+  color: #423736;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-top: 5%;
+}
+
+.content1 p {
+  margin-top: 6%;
+  margin-bottom: 3% ;
+  margin-left: 2%;
+  color: #987185;
+  text-align: justify;
+  padding: 10px 20px;
+  width: 45%;
+  font-size: 18px;
+  line-height: 1.6;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.btn-container1{
+  display: flex;
+  justify-content: last baseline;
+  gap: 1rem;
+}
+
+/*skills*/
+.w3-light-grey {
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.w3-container {
+  padding: 5px;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.w3-blue {
+  background-color: #2196F3;
+  color: white;
+}
+
+.w3-round {
+  border-radius: 8px;
+}
+
+.w3-round-large {
+  border-radius: 12px;
+}
+
+.w3-round-xlarge {
+  border-radius: 16px;
+}
+
+.contact-section {
+  background-color: #ffeaf1;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ef7c8e;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff7891;
+  transform: scale(1.05);
+}
+
+.contact-details p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-details a {
+  color: #ff4d6d;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #ef7c8e;
+}
+
+footer {
+  background-color: #ff8fa3;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
