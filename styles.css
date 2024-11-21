@@ -438,3 +438,11 @@ div.desc:hover{
   font-size: 18px;
   color: #423736;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #d6aa9f;
+  color: #423736;
+}
+
