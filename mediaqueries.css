@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: center;
     max-height: 100vh;
+    max-width: auto;
     background: url('Assets/mobilebg.png') no-repeat center center / cover;
     text-align: left;
     padding: 20px 15px;
@@ -112,6 +113,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    max-width: auto;
     max-height: 100vh;
     background: url('Assets/aboutme2.png') no-repeat center center / cover;
     text-align: center;
@@ -224,6 +226,7 @@
   #Contacts {
     flex-direction: column;
     height: auto;
+    max-width: auto;
   }
 
   .contact-form,
@@ -231,6 +234,7 @@
     flex: none;
     width: 100%;
     padding: 20px 10px;
+    margin-top: 20%;
   }
 
   .contact-info h1 {
@@ -258,6 +262,7 @@
   }
 
   .contact-info a {
+    flex-direction: row;
     font-size: 16px;
   }
 }
@@ -266,6 +271,8 @@
 @media (max-width: 768px) {
   #Contacts {
     padding: 10px;
+    height: auto;
+    max-width: auto;
   }
 
   .contact-info h1 {
@@ -289,6 +296,7 @@
   }
 
   .contact-info a {
+    flex-direction: auto;
     font-size: 14px;
   }
 }
@@ -297,6 +305,8 @@
 @media (max-width: 500px) {
   #Contacts {
     padding: 5px;
+    height: auto;
+    max-width: auto;
   }
 
   .contact-info h1 {
@@ -320,6 +330,7 @@
   }
 
   .contact-info a {
+    flex-direction: row;
     font-size: 12px;
   }
 }
