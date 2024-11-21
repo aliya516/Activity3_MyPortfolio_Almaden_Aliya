@@ -215,7 +215,7 @@ margin-bottom: 10px;
 .content1 {
   background-blend-mode: lighten;
   flex: 1;
-  max-width: 60vw;
+  max-width: 80vw;
   max-height: 100vh;
   padding: 50px;
   z-index: 2;
@@ -243,4 +243,113 @@ margin-bottom: 10px;
   position: relative; /* Keep it relative for natural flow */
 }
 
-/*skiLls*/
+/*skills*/
+div.scroll-container {
+  background-color: #e1c69d; /*d6aa9f*/
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  white-space: nowrap; /* Ensure all images are in a row */
+  padding: 8px;
+}
+
+div.scroll-container img {
+  padding: 5%; /* Adjust spacing around images */
+  height: 50vh; /* Scale images */
+  width: auto;
+  display: inline-block; /* Ensure images are inline */
+  border-radius: 2px /* Makes the borders round */
+}
+
+/*experience*/
+.hero2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('Assets/experience.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.content2 {
+  background-blend-mode: lighten;
+  flex: 1;
+  max-width: 60vw;
+  max-height: 100vh;
+  padding: 50px;
+}
+
+.content2 p{
+font-size: 40px;
+text-transform:inherit;
+font-weight: bold;
+align-self: first baseline;
+color: #987185; 
+margin-bottom: 10px;
+margin-left: 20%;
+}
+
+.content2 h1 {
+  color: #423736;
+  font-size: 50px; 
+  line-height: 1.2; 
+  margin: 0;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar margin */
+.container {
+  margin-top: 80px; /* Adjust to the height of your navbar */
+  padding: 10px;
+}
+
+/* Gallery grid layout */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  /*box-sizing: border-box;*/
+  box-sizing: inherit;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: center;
+  width: 10%;
+  margin-top: 5%;
+}
+
+
+.desc {
+  padding: 10px;
+  text-align: left;
+  text-decoration: solid;
+}

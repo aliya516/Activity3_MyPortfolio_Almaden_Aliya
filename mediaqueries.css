@@ -139,6 +139,65 @@
     margin-top: 10px;
     margin-bottom: 20px; /* Add spacing below paragraph */
   }
+
+  /*EXPERIENCE*/
+  .hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: url('Assets/experience2.png') no-repeat center center / cover;
+    text-align: center;
+    padding: 15px 15px;
+  }
+
+  /* Content section adjustments */
+  .content2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Softer opacity for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: auto;
+  }
+
+  /* Text styling */
+  .content2 p {
+    font-size: 20px; /* Reduced font size for better fit */
+    text-transform: inherit;
+    font-weight: bold;
+    color: #987185;
+    margin-bottom: 10px;
+  }
+
+  .content2 h1 {
+    color: #423736;
+    font-size: 25px; /* Scaled down for mobile */
+    line-height: 1.3;
+    margin: 10px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  div.scroll-container {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Align images in a column on mobile */
+    align-items: center; /* Center images horizontally */
+    justify-content: flex-start; /* Keep images at the top */
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    height: 100vh; /* Ensure the container fills the screen height */
+    padding: 8px;
+  }
+
+  div.scroll-container img {
+    height: 50vh; /* Scale the images for better fit */
+    width: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add spacing between images */
+  }
 }
 
 /* Small Screens */
@@ -155,5 +214,35 @@
 
   p {
     font-size: 1rem;
+  }
+}
+
+/*@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column */
   }
 }
