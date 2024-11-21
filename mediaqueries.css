@@ -227,18 +227,21 @@
     flex-direction: column;
     height: auto;
     max-width: auto;
+    background: url('Assets/contactmobilebg.png') no-repeat center center / cover;
+    text-align: center;
   }
 
   .contact-form,
   .contact-info {
     flex: none;
-    width: 100%;
+    width: auto;
     padding: 20px 10px;
     margin-top: 20%;
   }
 
   .contact-info h1 {
     font-size: 60px;
+    margin-top: 0%;
   }
 
   .contact-form h2 {
@@ -257,7 +260,7 @@
   }
 
   .contact-info .social-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
   }
 
@@ -274,7 +277,7 @@
     height: auto;
     max-width: auto;
   }
-
+  
   .contact-info h1 {
     font-size: 40px;
   }
